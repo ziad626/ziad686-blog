@@ -3,13 +3,7 @@ layout: post
 title: About Me
 ---
 
-# About Me
-
-I'm Ziad Salah, also known as `ziad686`. I'm 14 and from Egypt.
-
-I play CTFs with `0xL4ugh` and write about vulnerability research and CTFs.
-
-Domain: [ziad686.xyz](https://ziad686.xyz)
+I am Ziad Salah, also known as ziad686. I am a vulnerability researcher and CTF player with 0xL4ugh. I am focused on Pwn. Domain: [ziad686.xyz](https://ziad686.xyz).
 
 ## CVEs
 
