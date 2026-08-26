@@ -7,7 +7,7 @@ PATH
       jekyll-llms-output (~> 0.1)
       jekyll-markdown-output (~> 0.1)
       jekyll-sitemap (~> 1.4)
-      jekyll-soopr-seo-tag (~> 2.7.3)
+      jekyll-seo-tag (~> 2.7.3)
       rouge (~> 4.2)
       webrick (~> 1.8)
 
