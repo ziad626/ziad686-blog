@@ -53,7 +53,7 @@ sass:
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-  - jekyll-soopr-seo-tag
+  - jekyll-seo-tag
   - jekyll-markdown-output
   - jekyll-llms-output
 
