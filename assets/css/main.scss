@@ -75,6 +75,7 @@
 
 /* Only the tag section selected by the URL gets the box. */
 .tag-section > h2:target {
+  margin: 0;
   padding: 0;
   background: transparent;
   border: 0;
@@ -83,18 +84,20 @@
 }
 
 .tag-section:has(> h2:target) {
-  margin: 1.5rem 0 2rem;
-  padding: 1rem 1.1rem 1.1rem;
+  margin: 0.75rem 0 1rem;
+  padding: 0.55rem 0.7rem 0.65rem;
   background: var(--bg-secondary);
   border: 1px solid var(--border);
-  border-radius: 14px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.14);
 }
 
 .tag-section:has(> h2:target) ul {
-  margin-top: 0.75rem;
+  margin-top: 0.45rem;
 }
 
 .tag-section:has(> h2:target) .post-list-item {
+  gap: 0.5rem;
+  padding: 0.55rem 0.7rem;
   background: var(--bg);
 }
