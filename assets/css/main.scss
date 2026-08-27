@@ -73,23 +73,26 @@
   color: var(--links);
 }
 
-/* Only the tag section selected by the URL gets the box. */
+/* Keep the selected tag highlight tight around the tag name. */
 .tag-section > h2:target {
+  display: inline-flex;
+  align-items: baseline;
+  width: fit-content;
   margin: 0;
+  padding: 0.2rem 0.45rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  box-shadow: none;
+}
+
+.tag-section:has(> h2:target) {
+  margin: 0 0 1rem;
   padding: 0;
   background: transparent;
   border: 0;
   border-radius: 0;
   box-shadow: none;
-}
-
-.tag-section:has(> h2:target) {
-  margin: 0.75rem 0 1rem;
-  padding: 0.55rem 0.7rem 0.65rem;
-  background: var(--bg-secondary);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.14);
 }
 
 .tag-section:has(> h2:target) ul {
