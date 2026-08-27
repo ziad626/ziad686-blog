@@ -3,7 +3,7 @@ layout: post
 title: About Me
 ---
 
-I am Ziad Salah, also known as ziad686. I am a vulnerability researcher and CTF player with 0xL4ugh. I am focused on Pwn. [ziad686.xyz](https://ziad686.xyz).
+I am Ziad Salah, also known as ziad686. I am a vulnerability researcher and CTF player with 0xL4ugh. I am focused on Pwn.
 
 ## CVEs
 
