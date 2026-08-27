@@ -17,3 +17,54 @@
   padding: 0.75rem 1rem;
   background: var(--bg);
 }
+
+
+/* Tag page: separated rounded tags and readable post cards. */
+.tag-cloud {
+  gap: 0.7rem;
+  padding: 1rem;
+}
+
+.tag-cloud .tag-cloud-item {
+  align-items: center;
+  gap: 0.45rem;
+  margin: 0;
+  padding: 0.5rem 0.85rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+}
+
+.tag-cloud .tag-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.25rem;
+  height: 1.25rem;
+  padding: 0 0.3rem;
+  color: var(--text-secondary);
+  background: var(--bg-secondary);
+  border-radius: 999px;
+  opacity: 1;
+}
+
+.tag-section ul {
+  margin: 0.9rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tag-section .post-list-item {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin: 0;
+  padding: 0.8rem 1rem;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+}
+
+.tag-section .post-list-item a {
+  color: var(--links);
+}
