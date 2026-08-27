@@ -19,10 +19,14 @@
 }
 
 
-/* Tag page: separated rounded tags and readable post cards. */
+/* Tag page: keep the top tags loose and style only the selected tag section. */
 .tag-cloud {
   gap: 0.7rem;
-  padding: 1rem;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .tag-cloud .tag-cloud-item {
@@ -67,4 +71,30 @@
 
 .tag-section .post-list-item a {
   color: var(--links);
+}
+
+/* The selected path-traversal heading stays plain; its whole section gets the box. */
+#path-traversal {
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.tag-section:has(> #path-traversal) {
+  margin: 1.5rem 0 2rem;
+  padding: 1rem 1.1rem 1.1rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
+}
+
+.tag-section:has(> #path-traversal) ul {
+  margin-top: 0.75rem;
+}
+
+.tag-section:has(> #path-traversal) .post-list-item {
+  background: var(--bg);
 }
