@@ -145,3 +145,9 @@
   padding: 0 0.15em;
   white-space: nowrap;
 }
+
+
+/* Add space between posts when a tag contains more than one post. */
+.tag-section .post-list-item + .post-list-item {
+  margin-top: 0.7rem;
+}
