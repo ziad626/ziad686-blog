@@ -113,8 +113,8 @@
 
 
 /* Keep article source excerpts visibly inside code blocks. */
-article pre,
-article .highlight {
+.post-content pre,
+.post-content .highlight {
   margin: 1rem 0;
   padding: 0.85rem 1rem;
   overflow-x: auto;
@@ -123,8 +123,8 @@ article .highlight {
   border-radius: 8px;
 }
 
-article pre code,
-article .highlight code {
+.post-content pre code,
+.post-content .highlight code {
   display: block;
   padding: 0;
   background: transparent;
