@@ -136,3 +136,12 @@
   margin-top: 3rem;
   margin-bottom: 1.5rem;
 }
+
+
+/* Separate inline function names from the surrounding heading text. */
+.post-content h2 > code {
+  display: inline-block;
+  margin: 0 0.25em;
+  padding: 0 0.15em;
+  white-space: nowrap;
+}
