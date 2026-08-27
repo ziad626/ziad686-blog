@@ -28,7 +28,7 @@ First, `mmap()` creates a `0x1000` byte page with read, write, and execute permi
 
 This is the `setup()` function from Ghidra:
 
-![The seccomp filter inside setup()](assets/new-age-seccomp-setup.png)
+![The seccomp filter inside setup()](/assets/new-age-seccomp-setup.png)
 
 The filter starts with `SCMP_ACT_ALLOW`. In simple words, syscalls are allowed by default unless one of the rules matches them. The filter then adds rules that kill the thread for specific syscalls or for specific argument values.
 
