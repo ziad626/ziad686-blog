@@ -110,3 +110,22 @@
   padding: 0.55rem 0.7rem;
   background: var(--bg);
 }
+
+
+/* Keep article source excerpts visibly inside code blocks. */
+article pre,
+article .highlight {
+  margin: 1rem 0;
+  padding: 0.85rem 1rem;
+  overflow-x: auto;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+article pre code,
+article .highlight code {
+  display: block;
+  padding: 0;
+  background: transparent;
+}
