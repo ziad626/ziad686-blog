@@ -129,3 +129,10 @@
   padding: 0;
   background: transparent;
 }
+
+
+/* Give function-name section headings a little more breathing room. */
+.post-content h2:has(code) {
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
