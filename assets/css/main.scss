@@ -19,7 +19,7 @@
 }
 
 
-/* Tag page: keep the top tags loose and style only the selected tag section. */
+/* Tag page: keep the top tags loose and style the tag selected in the URL. */
 .tag-cloud {
   gap: 0.7rem;
   padding: 0;
@@ -73,8 +73,8 @@
   color: var(--links);
 }
 
-/* The selected path-traversal heading stays plain; its whole section gets the box. */
-#path-traversal {
+/* Only the tag section selected by the URL gets the box. */
+.tag-section > h2:target {
   padding: 0;
   background: transparent;
   border: 0;
@@ -82,7 +82,7 @@
   box-shadow: none;
 }
 
-.tag-section:has(> #path-traversal) {
+.tag-section:has(> h2:target) {
   margin: 1.5rem 0 2rem;
   padding: 1rem 1.1rem 1.1rem;
   background: var(--bg-secondary);
@@ -91,10 +91,10 @@
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
 }
 
-.tag-section:has(> #path-traversal) ul {
+.tag-section:has(> h2:target) ul {
   margin-top: 0.75rem;
 }
 
-.tag-section:has(> #path-traversal) .post-list-item {
+.tag-section:has(> h2:target) .post-list-item {
   background: var(--bg);
 }
